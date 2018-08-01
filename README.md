@@ -27,6 +27,6 @@ npm run test
 - [Redux-saga](https://github.com/redux-saga/redux-saga)
 - [Sass](https://sass-lang.com/)
 
-## Weather data source
+## Weather data source
 
 - https://api.openweathermap.org/data
