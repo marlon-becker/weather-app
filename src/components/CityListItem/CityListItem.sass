@@ -1,0 +1,30 @@
+@import "../../styles/variables"
+
+.CityListItem > div
+  display: flex
+  align-items: center
+  border-bottom: 1px solid rgba($color-black, .1)
+  padding: 10px
+  cursor: pointer
+  transition: all .25s
+  &:active
+    background: $color-black
+    color: $color-primary
+  &:hover
+    background: $color-black
+    color: $color-primary
+
+.CityListItem__temperature
+  font-size: $font-size-very-big
+  width: 80px
+  text-align: right
+  margin-right: 15px
+
+.CityListItem__data
+  font-size: $font-size-big
+  flex: 1
+  text-align: left
+
+.CityListItem > div
+  -webkit-animation: swing-in-top-fwd .5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both
+  animation: swing-in-top-fwd .5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both

@@ -1,0 +1,52 @@
+@import "../../styles/variables"
+
+.WeatherApp
+  background: $color-primary
+  height: 90vh
+  margin: 0 auto
+  max-height: 600px
+  max-width: 400px
+  min-width: 300px
+  text-align: center
+  width: 80vh
+  margin: 10px
+  box-shadow: 0 0 20px 0px rgba(darken($color-background, 40), .1)
+  display: flex
+  flex-direction: column
+
+
+.WeatherApp__header
+  background-color: $color-black
+  color: $color-primary
+  height: 95px
+  padding: 0 20px
+  position: relative
+  .Timer
+    position: absolute
+    bottom: 10px
+    right: 10px
+    opacity: .3
+
+.WeatherApp__title
+  font-size: $font-size-big
+  text-align: left
+
+.WeatherApp__main
+  flex: 1
+  font-size: 1.5em
+  overflow: scroll
+  padding: 10px
+
+.WeatherApp__footer
+  font-size: $font-size-small
+  height: 30px
+  line-height: 30px
+
+.WeatherApp__back
+  opacity: .3
+  font-size: $font-size-medium
+  cursor: pointer
+  text-align: left
+  &:hover
+    opacity: 1
+    transition: opacity .25s

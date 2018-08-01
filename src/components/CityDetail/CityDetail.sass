@@ -1,0 +1,55 @@
+@import "../../styles/variables"
+
+.CityListDetail__content--fetching
+  display: flex
+  flex-direction: column
+
+.CityListDetail__title
+  background: $color-black
+  color: $color-primary
+  font-size: $font-size-big
+  padding: .5em
+  margin-top: .2em
+  text-transform: uppercase
+  font-weight: bold
+
+.CityListDetail__temperature
+  font-size: $font-size-extra-big
+
+.CityListDetail__data
+  display: flex
+  flex-direction: column
+  padding: 20px
+  li
+    display: flex
+    flex-direction: row
+    align-items: center
+    border-bottom: 1px solid rgba($color-black, .1)
+    padding: 5px 0
+    font-size: $font-size-small
+    > p
+      width: 50%
+      margin-right: 15px
+      text-align: left
+    .CityListDetail__data__details
+      flex: 1
+      display: flex
+      align-items: center
+      text-align: right
+
+.CityDetail
+  .wi
+    margin-top: 30px
+    font-size: 4.5rem
+
+.CityListDetail__title
+  -webkit-animation: swing-in-top-fwd .5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both
+  animation: swing-in-top-fwd .5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both
+
+.CityListDetail__temperature
+	-webkit-animation: swing-in-top-fwd .5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both
+  animation: swing-in-top-fwd .5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both
+
+.CityListDetail__data
+	-webkit-animation: swing-in-top-fwd .5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both
+  animation: swing-in-top-fwd .5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both
